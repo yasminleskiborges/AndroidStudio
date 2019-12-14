@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical"
+    style="@style/AppTheme"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/painel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <!-- funções da calculadora -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button style="@style/Botoes.Operacoes"
+            android:text="ON"/>
+
+        <Button style="@style/Botoes.Operacoes"
+            android:text="C"/>
+
+        <Button style="@style/Botoes.Operacoes"
+            android:text="M+"/>
+
+        <Button style="@style/Botoes.Operacoes"
+            android:text="M-"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <!-- Botões numéricos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- 7 8 9 -->
+            <LinearLayout
+                style="@style/LinearLayoutDigitos">
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/Botoes.Numeros"
+                    android:text="7"/>
+                <Button
+                    android:id="@+id/btn8"
+                    style="@style/Botoes.Numeros"
+                    android:text="8"/>
+                <Button
+                    android:id="@+id/btn9"
+                    style="@style/Botoes.Numeros"
+                    android:text="9"/>
+
+                <Button
+                    android:id="@+id/btnMais"
+                    style="@style/Botoes.Operacoes"
+                    android:text="+"/>
+            </LinearLayout>
+
+            <!-- 4 5 6 -->
+            <LinearLayout
+                style="@style/LinearLayoutDigitos">
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/Botoes.Numeros"
+                    android:text="4"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/Botoes.Numeros"
+                    android:text="5"/>
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/Botoes.Numeros"
+                    android:text="6"/>
+
+                <Button
+                    android:id="@+id/btnMenos"
+                    style="@style/Botoes.Operacoes"
+                    android:text="-"/>
+            </LinearLayout>
+
+            <!-- 1 2 3 -->
+            <LinearLayout
+                style="@style/LinearLayoutDigitos">
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/Botoes.Numeros"
+                    android:text="1"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/Botoes.Numeros"
+                    android:text="2"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/Botoes.Numeros"
+                    android:text="3"/>
+                <Button
+                    android:id="@+id/btnMultiplicacao"
+                    style="@style/Botoes.Operacoes"
+                    android:text="*"/>
+
+
+            </LinearLayout>
+
+            <!-- (ponto) 0 (igual) -->
+            <LinearLayout
+                style="@style/LinearLayoutDigitos">
+                <Button
+                    android:id="@+id/btnPonto"
+                    style="@style/Botoes.Numeros"
+                    android:text="."/>
+
+                <Button
+                    android:id="@+id/btn0"
+                    style="@style/Botoes.Numeros"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/btnIgual"
+                    style="@style/Botoes.Numeros"
+                    android:text="="/>
+
+                <Button
+                    android:id="@+id/btnDivisao"
+                    style="@style/Botoes.Operacoes"
+                    android:text="/"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
