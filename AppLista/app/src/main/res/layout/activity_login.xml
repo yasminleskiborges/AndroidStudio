@@ -43,7 +43,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Senha">
+                android:text="Login">
 
             </TextView>
 
@@ -51,7 +51,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtSenha">
+                android:id="@+id/edtLogin">
 
             </EditText>
 
@@ -67,7 +67,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login">
+                android:text="Senha">
 
             </TextView>
 
@@ -75,7 +75,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtLogin">
+                android:id="@+id/edtSenha">
 
             </EditText>
 
